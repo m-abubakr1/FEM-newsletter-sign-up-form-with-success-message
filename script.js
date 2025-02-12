@@ -11,7 +11,7 @@ document
     // Email Validation
     let emailPattern = /^\S+@\S+\.\S+$/;
     if (!emailPattern.test(email)) {
-      emailError.textContent = "Enter a valid email.";
+      emailError.textContent = "Valid email required";
       valid = false;
     } else {
       emailError.textContent = "";
