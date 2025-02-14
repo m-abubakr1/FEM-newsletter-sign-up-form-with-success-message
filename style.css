@@ -193,7 +193,7 @@ form {
 }
 
 .checkmark-list li::before {
-  content: url("/assets/images/icon-list.svg");
+  content: url("./assets/images/icon-list.svg");
 }
 
 .newsletter-cta,
