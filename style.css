@@ -89,10 +89,10 @@ input::placeholder {
   color: var(--clr-neutral-200);
 }
 
-input:not(:focus):invalid {
+/* input:not(:focus):invalid {
   color: var(--clr-accent-400);
   border: 1px solid var(--clr-accent-400);
-}
+} */
 
 .form-group {
   display: grid;

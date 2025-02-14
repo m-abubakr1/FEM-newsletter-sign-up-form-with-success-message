@@ -1,25 +1,37 @@
-document
-  .getElementById("reg-form")
-  .addEventListener("submit", function (event) {
-    event.preventDefault(); // Prevent form submission
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("reg-form");
+  const emailInput = document.getElementById("email");
+  const errorSpan = document.querySelector(".error");
+  const newsletterCta = document.querySelector(".newsletter-cta");
+  const successMesg = document.querySelector(".success-mesg");
+  const displayEmail = document.getElementById("display-email");
+  const dismissButton = successMesg.querySelector("button");
 
-    let email = document.getElementById("email").value.trim();
-    let emailError = document.getElementsByClassName("error");
+  // Handle form submission
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
 
-    let valid = true; // Track if all fields are valid
+    const email = emailInput.value.trim();
+    const emailRegex = /^\S+@\S+\.\S+$/;
 
-    // Email Validation
-    let emailPattern = /^\S+@\S+\.\S+$/;
-    if (!emailPattern.test(email)) {
-      emailError.innerHTML = "Valid email required";
-      valid = false;
+    if (emailRegex.test(email)) {
+      errorSpan.style.display = "none";
+      displayEmail.textContent = email;
+
+      newsletterCta.classList.add("hide");
+      successMesg.classList.remove("hide");
     } else {
-      emailError.innerHTML = "";
-    }
-
-    // If all fields are valid, submit the form
-    if (valid) {
-      alert("Form Submitted Successfully!");
-      this.submit(); // Proceed with form submission
+      errorSpan.style.display = "block";
     }
   });
+
+  // Handle the Dismiss message button click to toggle back to the newsletter form
+  dismissButton.addEventListener("click", () => {
+    successMesg.classList.add("hide");
+    newsletterCta.classList.remove("hide");
+
+    // Reset the form input and error state
+    emailInput.value = "";
+    errorSpan.style.display = "none";
+  });
+});
