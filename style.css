@@ -226,7 +226,6 @@ section.hide {
 }
 
 .newsletter-cta form {
-  margin-block-start: 0.85rem;
   display: grid;
   gap: 1.5rem;
 }
