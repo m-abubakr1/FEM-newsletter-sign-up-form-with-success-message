@@ -18,50 +18,52 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <main class="newsletter-cta">
-      <!-- Picture of CTA -->
-      <picture>
-        <source
-          media="(min-width: 650px)"
-          srcset="assets/images/illustration-sign-up-desktop.svg"
-        />
-        <img src="assets/images/illustration-sign-up-mobile.svg" alt="" />
-      </picture>
+    <main>
+      <section class="newsletter-cta hide">
+        <!-- Picture of CTA -->
+        <picture>
+          <source
+            media="(min-width: 650px)"
+            srcset="assets/images/illustration-sign-up-desktop.svg"
+          />
+          <img src="assets/images/illustration-sign-up-mobile.svg" alt="" />
+        </picture>
 
-      <!-- Content -->
-      <div class="content">
-        <h1 class="title">Stay updated!</h1>
-        <p>Join 60,000+ product managers receiving monthly updates on:</p>
-        <ul class="checkmark-list">
-          <li>Product discovery and building what matters</li>
-          <li>Measuring to ensure updates are a success</li>
-          <li>And much more!</li>
-        </ul>
+        <!-- Content -->
+        <div class="content">
+          <h1 class="title">Stay updated!</h1>
+          <p>Join 60,000+ product managers receiving monthly updates on:</p>
+          <ul class="checkmark-list">
+            <li>Product discovery and building what matters</li>
+            <li>Measuring to ensure updates are a success</li>
+            <li>And much more!</li>
+          </ul>
 
-        <!-- Email input -->
-        <form action="" id="reg-form">
-          <div class="form-group with-error-field">
-            <label for="email">Email address</label>
-            <input placeholder="email@company.com" type="email" id="email" />
-            <span class="error">Valid email required</span>
-          </div>
-          <button type="submit" class="button">
-            Subscribe to monthly newsletter
-          </button>
-        </form>
-      </div>
+          <!-- Email input -->
+          <form action="" id="reg-form">
+            <div class="form-group with-error-field">
+              <label for="email">Email address</label>
+              <input placeholder="email@company.com" type="email" id="email" />
+              <span class="error">Valid email required</span>
+            </div>
+            <button type="submit" class="button">
+              Subscribe to monthly newsletter
+            </button>
+          </form>
+        </div>
+      </section>
 
       <!-- Success Message -->
-      <div class="success-mesg">
+      <section class="success-mesg content">
         <img src="assets/images/icon-success.svg" alt="Success icon" />
-        <h2>Thanks for subscribing!</h2>
+        <h2 class="title">Thanks for subscribing!</h2>
         <p>
           A confirmation email has been sent to
           <span id="display-email"></span>. Please open it and click the button
           to confirm your subscription.
         </p>
         <button type="button" class="button">Dismiss message</button>
-      </div>
+      </section>
     </main>
 
     <!-- JS LINK -->
