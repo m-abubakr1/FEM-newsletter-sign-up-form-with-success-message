@@ -89,10 +89,11 @@ input::placeholder {
   color: var(--clr-neutral-200);
 }
 
-/* input:not(:focus):invalid {
+
+.inputerror:not(:focus) {
   color: var(--clr-accent-400);
   border: 1px solid var(--clr-accent-400);
-} */
+}
 
 .form-group {
   display: grid;
@@ -109,9 +110,9 @@ input::placeholder {
   display: none;
 }
 
-.form-group > :not(:focus):invalid + .error {
+/* .form-group > :not(:focus):invalid + .error {
   display: block;
-}
+} */
 
 .form-group.with-error-field {
   grid-template-columns: 1fr 1fr;

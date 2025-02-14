@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
       successMesg.classList.remove("hide");
     } else {
       errorSpan.style.display = "block";
+      emailInput.classList.add("inputerror");
     }
   });
 
