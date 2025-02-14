@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
       errorSpan.style.display = "block";
       emailInput.classList.add("inputerror");
+      errorSpan.classList.add("shake");
     }
   });
 
@@ -35,5 +36,6 @@ document.addEventListener("DOMContentLoaded", () => {
     emailInput.value = "";
     errorSpan.style.display = "none";
     emailInput.classList.remove("inputerror");
+    errorSpan.classList.remove("shake");
   });
 });
