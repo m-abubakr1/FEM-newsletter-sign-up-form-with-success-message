@@ -184,10 +184,6 @@ form {
 .hide {
   display: none;
 }
-.success-mesg {
-  width: 450px;
-  padding: 2rem;
-}
 
 @media (min-width: 650px) {
   .newsletter-cta {
@@ -202,6 +198,11 @@ form {
   .newsletter-cta > .content {
     grid-column: 1;
     grid-row: 1;
+  }
+
+  .success-mesg {
+    width: 450px;
+    padding: 2rem;
   }
 
   .hide {
