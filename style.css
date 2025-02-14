@@ -26,7 +26,7 @@
 
   --fs-300: 0.825rem;
   --fs-400: 1rem;
-  --fs-900: 2.5rem;
+  --fs-900: 2.7rem;
 }
 
 /* Box sizing rules */
@@ -212,8 +212,8 @@ section.hide {
 .success-mesg,
 .newsletter-cta > .content {
   display: grid;
-  gap: 1rem;
-  padding: 0rem 1.5rem;
+  gap: 0.657rem;
+  margin-inline: 3rem;
 }
 
 .title {
@@ -226,7 +226,7 @@ section.hide {
 }
 
 .newsletter-cta form {
-  /* margin-block-start: 1.25rem; */
+  margin-block-start: 0.85rem;
   display: grid;
   gap: 1.5rem;
 }
