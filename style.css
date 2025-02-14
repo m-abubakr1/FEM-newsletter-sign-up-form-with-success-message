@@ -181,7 +181,7 @@ form {
   background-color: var(--clr-neutral-100);
 }
 
-.hide {
+section.hide {
   display: none;
 }
 
@@ -204,7 +204,7 @@ form {
     width: 450px;
   }
 
-  .hide {
+  section.hide {
     display: none;
   }
 }
