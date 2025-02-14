@@ -202,7 +202,6 @@ form {
 
   .success-mesg {
     width: 450px;
-    padding: 2rem;
   }
 
   .hide {
@@ -214,7 +213,7 @@ form {
 .newsletter-cta > .content {
   display: grid;
   gap: 1rem;
-  padding: 1.5rem;
+  padding: 2rem 3rem;
 }
 
 .title {
