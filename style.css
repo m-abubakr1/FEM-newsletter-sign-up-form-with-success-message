@@ -73,7 +73,7 @@ body {
   min-height: 100vh;
   display: grid;
   place-content: center;
-  background-color: var(--clr-neutral-800);
+  background-color: var(--clr-neutral-700);
 }
 
 input {
