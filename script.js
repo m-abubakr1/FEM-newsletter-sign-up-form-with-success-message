@@ -34,5 +34,6 @@ document.addEventListener("DOMContentLoaded", () => {
     // Reset the form input and error state
     emailInput.value = "";
     errorSpan.style.display = "none";
+    emailInput.classList.remove("inputerror");
   });
 });
