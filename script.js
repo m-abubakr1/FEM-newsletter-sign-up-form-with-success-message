@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // Handle the Dismiss message button click to toggle back to the newsletter form
+  // Handle the Dismiss message button
   dismissButton.addEventListener("click", () => {
     successMesg.classList.add("hide");
     newsletterCta.classList.remove("hide");
